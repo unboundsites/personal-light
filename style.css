@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "blokk";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/5028/BLOKKNeue-Regular.woff");
+}
+body {
+  background-color: #f9f9f9;
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  position: relative;
+}
+@media (min-width: 800px) {
+  body {
+    min-height: 100vh;
+    display: grid;
+    place-self: center;
+  }
+}
+
+.app {
+  max-width: 550px;
+  margin: auto;
+  padding: 2rem 2.5rem;
+}
+@media (min-width: 600px) {
+  .app {
+    padding: 4rem;
+  }
+}
+@media (min-width: 800px) {
+  .app {
+    max-width: 800px;
+  }
+}
+
+.horz-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: flex;
+}
+
+.profile-header {
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .profile-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 2rem;
+    -webkit-box-align: center;
+            align-items: center;
+    text-align: left;
+  }
+}
+@media (min-width: 600px) {
+  .profile-header {
+    grid-gap: 3rem;
+  }
+}
+
+.profile-image img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profile-name {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+@media (min-width: 800px) {
+  .profile-name {
+    font-size: 3.5rem;
+  }
+}
+
+.profile-title {
+  margin: 0 0 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+@media (min-width: 600px) {
+  .profile-title {
+    font-size: 1.33rem;
+  }
+}
+@media (min-width: 800px) {
+  .profile-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .profile-text {
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 600px) {
+  .profile-text p {
+    font-size: 1.33rem;
+  }
+}
+@media (min-width: 800px) {
+  .profile-text p {
+    font-size: 1.5rem;
+  }
+}
+.profile-text a {
+  color: #333;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+}
+.profile-text a:hover {
+  opacity: 0.7;
+}
+.profile-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 0;
+}
+.profile-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0;
+}
+.profile-text h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0;
+}
+.profile-text h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 0;
+}
+.profile-text h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 0;
+}
+
+.profile-social {
+  margin-top: 2rem;
+}
+
+.profile-social-headline {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.profile-social-instructions {
+  background: #eee;
+  padding: 0.5rem 1rem;
+  margin: 0 0 1.5rem;
+  display: none;
+  text-align: center;
+}
+
+.social-menu {
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.social-menu-item {
+  margin: 0 1rem;
+}
+.social-menu-item a {
+  color: #333;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  display: inline-block;
+}
+.social-menu-item a:hover {
+  opacity: 0.7;
+}
+.social-menu-item img {
+  width: 45px;
+  height: 45px;
+}
+
+[mv-progress] {
+  font-family: blokk, sans-serif;
+  opacity: 0.1;
+}
+[mv-progress] .regular-image {
+  display: none;
+}
+[mv-progress] .placeholder-image {
+  display: block;
+}
+
+[mv-mode="edit"] .profile-social-instructions {
+  display: block;
+}
