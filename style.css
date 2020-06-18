@@ -68,6 +68,8 @@ body {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
 }
 
 .profile-name {
