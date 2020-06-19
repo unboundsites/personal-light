@@ -16,7 +16,12 @@
 <!-- partial:index.partial.html -->
 <div class="app" mv-app="persoanlsite" mv-storage="local" mv-plugins="tinymce" mv-bar="no-login">     
   <header class="profile-header">
+    <div class="photo-instructions">
+      <p class="instructions-close"><i class="zmdi zmdi-close"></i></p>
+      <p>For best results, use a photo with your face in the middle of the image.</p>
+    </div>
     <div class="profile-image"><img class="placeholder-image" src="https://assets.codepen.io/495197/image-placeholderpng" property="profile_image" alt="Profile photo of [profile_name], [profile_title]" title="[profile_name], [profile_title]"/>
+      <p class="profile-info"><i class="zmdi zmdi-help"></i></p>
       <!--img.placeholder-image(src="https://assets.codepen.io/495197/image-placeholderpng")-->
     </div>
     <div class="profile-header-text">
@@ -29,13 +34,15 @@
     <p>So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid), whether the pleasure of making a daisy-chain would be worth the trouble of getting up and picking the daisies, when suddenly a White Rabbit with pink eyes ran close by her.</p>
   </article>
   <footer class="profile-social">
-    <header>
-      <h3 class="profile-social-headline" property="profile_social_headline">Connect</h3>
-      <div class="profile-social-instructions">
-        <p><strong>Input the profile or page URL for each social media service you want to connect.</strong></p>
-        <p>Icons available for:<br>Facebook, Twitter, Instagram, YouTube, LinkedIn, Behance, Patreon, WordPress, VK, and Github</p>
-      </div>
+    <header>     
+      <h3 class="profile-social-headline" property="profile_social_headline">Connect     </h3>
+      <!--p.connect-info <i class="zmdi zmdi-help"></i>-->
     </header>
+    <!--.profile-social-instructions
+    p.instructions-close.social-close <i class="zmdi zmdi-close"></i>
+    p <strong>Input the profile or page URL for each social media service you want to connect.</strong>
+    p Icons available for:<br>Facebook, Twitter, Instagram, YouTube, LinkedIn, Behance, Patreon, WordPress, VK, and Github
+    -->
     <ul class="horz-menu social-menu">
       <li class="social-menu-item" property="social_item" mv-multiple="mv-multiple">
         <meta property="icon_url" content="[if(contains(social_link, 'twitter'), 'https://brianhaferkamp.github.io/super-basic/icons/twitter-filled.png', if(contains(social_link, 'facebook'), 'https://brianhaferkamp.github.io/super-basic/icons/facebook-filled.png', if(contains(social_link, 'linkedin'), 'https://brianhaferkamp.github.io/super-basic/icons/linkedin-filled.png', if(contains(social_link, 'pinterest'), 'https://brianhaferkamp.github.io/super-basic/icons/pinterest-filled.png', if(contains(social_link, 'behance'), 'https://brianhaferkamp.github.io/super-basic/icons/behance-filled.png', if(contains(social_link, 'github'), 'https://brianhaferkamp.github.io/super-basic/icons/github-filled.png', if(contains(social_link, 'instagram'), 'https://brianhaferkamp.github.io/super-basic/icons/instagram-filled.png', if(contains(social_link, 'patreon'), 'https://brianhaferkamp.github.io/super-basic/icons/patreon-filled.png', if(contains(social_link, 'vk'), 'https://brianhaferkamp.github.io/super-basic/icons/vk-filled.png', if(contains(social_link, 'youtube'), 'https://brianhaferkamp.github.io/super-basic/icons/youtube-filled.png', if(contains(social_link, 'wordpress'), 'https://brianhaferkamp.github.io/super-basic/icons/wordpress-filled.png', 'https://assets.codepen.io/495197/icon-default.svg')))))))))))]"/><a href="#" property="social_link" target="_blank"><img src="[icon_url]"/></a>
@@ -44,6 +51,8 @@
   </footer>
 </div>
 <!-- partial -->
-  <script src='https://get.mavo.io/stable/mavo.es5.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='https://get.mavo.io/stable/mavo.es5.min.js'></script><script  src="./script.js"></script>
+
 </body>
 </html>
